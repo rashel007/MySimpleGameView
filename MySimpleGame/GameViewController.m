@@ -35,6 +35,7 @@
     }else{
         [lbDiff setText:@"Difficulty: Hard"];
         NSLog(@"DIfficulty Hard");
+        
     }
     
 }
