@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,13 +16,31 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="556-hI-KcQ">
+                                <variation key="heightClass=compact-widthClass=compact" image="bg_splash_5.jpg"/>
+                                <variation key="heightClass=compact-widthClass=regular" image="bg_splash_6.jpg"/>
+                                <variation key="heightClass=regular-widthClass=regular" image="bg_splash_6.jpg"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="556-hI-KcQ" secondAttribute="bottom" id="2Yi-tX-Fmg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="556-hI-KcQ" secondAttribute="trailing" id="50P-ZI-91p"/>
+                            <constraint firstItem="556-hI-KcQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z4W-ih-LsK"/>
+                            <constraint firstItem="556-hI-KcQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cmj-qf-rT6"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="207" y="25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_splash_5.jpg" width="1194" height="668"/>
+        <image name="bg_splash_6.jpg" width="1287" height="720"/>
+    </resources>
 </document>
