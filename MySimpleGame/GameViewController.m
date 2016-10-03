@@ -17,22 +17,9 @@
 @synthesize sgDiff, lbTime, lbLevel, lbScore,lbDiff;
 
 -(IBAction)segmentDidChange:(id)sender{
+    [self updateDifficulty];
     
-    
-    UISegmentedControl *controller = (UISegmentedControl *)sender;
-    
-    NSInteger dif = controller.selectedSegmentIndex;
-    
-    if(dif == 0){
-        [lbDiff setText :@"Difficulty: Easy"];
-        NSLog(@"DIfficulty Easy");
-    }else if(dif == 1){
-        [lbDiff setText:@"Difficulty: Medium"];
-        NSLog(@"DIfficulty MEdium");
-    }else{
-        [lbDiff setText:@"Difficulty: Hard"];
-        NSLog(@"DIfficulty Hard");
-    }
+   
 }
 -(void) updateDifficulty{
     
