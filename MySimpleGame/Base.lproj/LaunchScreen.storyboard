@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fec-pm-2h8">
@@ -24,9 +25,20 @@
                                 <variation key="heightClass=regular-widthClass=compact" image="bg_splash_6.jpg"/>
                                 <variation key="heightClass=regular-widthClass=regular" image="bg_splash_6.jpg"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiL-m4-a8x">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="erq-kG-hGR"/>
+                                    <constraint firstAttribute="height" constant="30" id="xbm-M0-yvy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wiL-m4-a8x" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.5" id="6mq-OL-H1b"/>
+                            <constraint firstItem="wiL-m4-a8x" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" multiplier="1.1" id="8vg-Da-fVM"/>
                             <constraint firstAttribute="trailing" secondItem="fec-pm-2h8" secondAttribute="trailing" id="A6e-Qx-d1c"/>
                             <constraint firstItem="fec-pm-2h8" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ACT-dd-9dM"/>
                             <constraint firstItem="fec-pm-2h8" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PaS-gV-lNU"/>
@@ -36,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.816901408450704" y="375"/>
+            <point key="canvasLocation" x="125.4872563718141" y="234.40000000000001"/>
         </scene>
     </scenes>
     <resources>
