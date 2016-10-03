@@ -22,6 +22,7 @@
 		267190011DA2942700420AF0 /* bg_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 267190001DA2942700420AF0 /* bg_splash.jpg */; };
 		267190041DA2959A00420AF0 /* bg_splash_6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 267190021DA2959A00420AF0 /* bg_splash_6.jpg */; };
 		267190071DA295EE00420AF0 /* bg_splash_5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 267190061DA295EE00420AF0 /* bg_splash_5.jpg */; };
+		267190091DA29EB200420AF0 /* bg_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 267190081DA29EB200420AF0 /* bg_button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		267190001DA2942700420AF0 /* bg_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_splash.jpg; sourceTree = "<group>"; };
 		267190021DA2959A00420AF0 /* bg_splash_6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_splash_6.jpg; sourceTree = "<group>"; };
 		267190061DA295EE00420AF0 /* bg_splash_5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_splash_5.jpg; sourceTree = "<group>"; };
+		267190081DA29EB200420AF0 /* bg_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +193,7 @@
 		26718FF41DA290BB00420AF0 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				267190081DA29EB200420AF0 /* bg_button.png */,
 				267190061DA295EE00420AF0 /* bg_splash_5.jpg */,
 				267190021DA2959A00420AF0 /* bg_splash_6.jpg */,
 				267190001DA2942700420AF0 /* bg_splash.jpg */,
@@ -309,6 +312,7 @@
 				267190071DA295EE00420AF0 /* bg_splash_5.jpg in Resources */,
 				267190011DA2942700420AF0 /* bg_splash.jpg in Resources */,
 				26718FCE1DA2903B00420AF0 /* LaunchScreen.storyboard in Resources */,
+				267190091DA29EB200420AF0 /* bg_button.png in Resources */,
 				26718FCB1DA2903B00420AF0 /* Assets.xcassets in Resources */,
 				26718FC91DA2903B00420AF0 /* Main.storyboard in Resources */,
 				26718FF61DA2911700420AF0 /* bg_home.jpg in Resources */,

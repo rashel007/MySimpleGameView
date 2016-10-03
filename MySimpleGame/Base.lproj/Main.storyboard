@@ -3,7 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11103.10"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,30 +16,63 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="556-hI-KcQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_splash_5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="70W-bE-MM2">
                                 <variation key="heightClass=compact-widthClass=compact" image="bg_splash_5.jpg"/>
                                 <variation key="heightClass=compact-widthClass=regular" image="bg_splash_6.jpg"/>
                                 <variation key="heightClass=regular-widthClass=regular" image="bg_splash_6.jpg"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJG-Zn-v9S">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FWN-AQ-48x"/>
+                                    <constraint firstAttribute="height" constant="30" id="RHG-vv-vLX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <state key="normal" title="Play" backgroundImage="bg_button.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nk8-W4-ypf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="Chp-eb-ZTK"/>
+                                    <constraint firstAttribute="height" constant="30" id="UKn-sk-bjg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <state key="normal" title="Settings" backgroundImage="bg_button.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsR-s7-SsZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Kef-qY-A8P"/>
+                                    <constraint firstAttribute="width" constant="75" id="q2j-8y-Zfh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
+                                <state key="normal" title="About" backgroundImage="bg_button.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="556-hI-KcQ" secondAttribute="bottom" id="2Yi-tX-Fmg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="556-hI-KcQ" secondAttribute="trailing" id="50P-ZI-91p"/>
-                            <constraint firstItem="556-hI-KcQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Z4W-ih-LsK"/>
-                            <constraint firstItem="556-hI-KcQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cmj-qf-rT6"/>
+                            <constraint firstItem="JJG-Zn-v9S" firstAttribute="leading" secondItem="DsR-s7-SsZ" secondAttribute="trailing" constant="18" id="35C-rS-yrf"/>
+                            <constraint firstItem="70W-bE-MM2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7JB-8V-X1b"/>
+                            <constraint firstItem="JJG-Zn-v9S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ajq-S6-3N6"/>
+                            <constraint firstItem="Nk8-W4-ypf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="IPm-Zd-J83"/>
+                            <constraint firstAttribute="trailing" secondItem="70W-bE-MM2" secondAttribute="trailing" id="JhT-hy-nal"/>
+                            <constraint firstItem="Nk8-W4-ypf" firstAttribute="leading" secondItem="JJG-Zn-v9S" secondAttribute="trailing" constant="18" id="KAW-te-I66"/>
+                            <constraint firstItem="70W-bE-MM2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cqr-Pa-iKl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="70W-bE-MM2" secondAttribute="bottom" id="ebu-fS-rJk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="70W-bE-MM2" secondAttribute="bottom" id="fUR-Gk-eMv"/>
+                            <constraint firstAttribute="trailing" secondItem="70W-bE-MM2" secondAttribute="trailing" id="iZg-F5-uXh"/>
+                            <constraint firstItem="JJG-Zn-v9S" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="lPz-A1-DOH"/>
+                            <constraint firstItem="DsR-s7-SsZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="wKO-5O-Wb8"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="207" y="25"/>
+            <point key="canvasLocation" x="205.54722638680661" y="23.199999999999999"/>
         </scene>
     </scenes>
     <resources>
+        <image name="bg_button.png" width="218" height="71"/>
         <image name="bg_splash_5.jpg" width="1194" height="668"/>
         <image name="bg_splash_6.jpg" width="1287" height="720"/>
     </resources>
