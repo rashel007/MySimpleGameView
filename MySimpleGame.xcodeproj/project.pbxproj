@@ -15,6 +15,10 @@
 		26718FCE1DA2903B00420AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26718FCC1DA2903B00420AF0 /* LaunchScreen.storyboard */; };
 		26718FD91DA2903B00420AF0 /* MySimpleGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26718FD81DA2903B00420AF0 /* MySimpleGameTests.m */; };
 		26718FE41DA2903B00420AF0 /* MySimpleGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26718FE31DA2903B00420AF0 /* MySimpleGameUITests.m */; };
+		26718FF61DA2911700420AF0 /* bg_home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 26718FF51DA2911700420AF0 /* bg_home.jpg */; };
+		26718FF91DA2920300420AF0 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26718FF81DA2920300420AF0 /* SettingsViewController.m */; };
+		26718FFC1DA2921800420AF0 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26718FFB1DA2921800420AF0 /* AboutViewController.m */; };
+		26718FFF1DA2922700420AF0 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26718FFE1DA2922700420AF0 /* GameViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		26718FDF1DA2903B00420AF0 /* MySimpleGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySimpleGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26718FE31DA2903B00420AF0 /* MySimpleGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySimpleGameUITests.m; sourceTree = "<group>"; };
 		26718FE51DA2903B00420AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26718FF51DA2911700420AF0 /* bg_home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg_home.jpg; sourceTree = "<group>"; };
+		26718FF71DA2920300420AF0 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		26718FF81DA2920300420AF0 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		26718FFA1DA2921800420AF0 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		26718FFB1DA2921800420AF0 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		26718FFD1DA2922700420AF0 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		26718FFE1DA2922700420AF0 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,13 +112,11 @@
 		26718FBD1DA2903B00420AF0 /* MySimpleGame */ = {
 			isa = PBXGroup;
 			children = (
-				26718FC11DA2903B00420AF0 /* AppDelegate.h */,
-				26718FC21DA2903B00420AF0 /* AppDelegate.m */,
-				26718FC41DA2903B00420AF0 /* ViewController.h */,
-				26718FC51DA2903B00420AF0 /* ViewController.m */,
-				26718FC71DA2903B00420AF0 /* Main.storyboard */,
+				26718FF41DA290BB00420AF0 /* images */,
+				26718FF31DA2906100420AF0 /* storyBoards */,
+				26718FF21DA2905700420AF0 /* specialClasses */,
+				26718FF11DA2904800420AF0 /* viewControllers */,
 				26718FCA1DA2903B00420AF0 /* Assets.xcassets */,
-				26718FCC1DA2903B00420AF0 /* LaunchScreen.storyboard */,
 				26718FCF1DA2903B00420AF0 /* Info.plist */,
 				26718FBE1DA2903B00420AF0 /* Supporting Files */,
 			);
@@ -138,6 +147,47 @@
 				26718FE51DA2903B00420AF0 /* Info.plist */,
 			);
 			path = MySimpleGameUITests;
+			sourceTree = "<group>";
+		};
+		26718FF11DA2904800420AF0 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				26718FC41DA2903B00420AF0 /* ViewController.h */,
+				26718FC51DA2903B00420AF0 /* ViewController.m */,
+				26718FF71DA2920300420AF0 /* SettingsViewController.h */,
+				26718FF81DA2920300420AF0 /* SettingsViewController.m */,
+				26718FFA1DA2921800420AF0 /* AboutViewController.h */,
+				26718FFB1DA2921800420AF0 /* AboutViewController.m */,
+				26718FFD1DA2922700420AF0 /* GameViewController.h */,
+				26718FFE1DA2922700420AF0 /* GameViewController.m */,
+			);
+			name = viewControllers;
+			sourceTree = "<group>";
+		};
+		26718FF21DA2905700420AF0 /* specialClasses */ = {
+			isa = PBXGroup;
+			children = (
+				26718FC11DA2903B00420AF0 /* AppDelegate.h */,
+				26718FC21DA2903B00420AF0 /* AppDelegate.m */,
+			);
+			name = specialClasses;
+			sourceTree = "<group>";
+		};
+		26718FF31DA2906100420AF0 /* storyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				26718FC71DA2903B00420AF0 /* Main.storyboard */,
+				26718FCC1DA2903B00420AF0 /* LaunchScreen.storyboard */,
+			);
+			name = storyBoards;
+			sourceTree = "<group>";
+		};
+		26718FF41DA290BB00420AF0 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				26718FF51DA2911700420AF0 /* bg_home.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +299,7 @@
 				26718FCE1DA2903B00420AF0 /* LaunchScreen.storyboard in Resources */,
 				26718FCB1DA2903B00420AF0 /* Assets.xcassets in Resources */,
 				26718FC91DA2903B00420AF0 /* Main.storyboard in Resources */,
+				26718FF61DA2911700420AF0 /* bg_home.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +325,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				26718FC61DA2903B00420AF0 /* ViewController.m in Sources */,
+				26718FFC1DA2921800420AF0 /* AboutViewController.m in Sources */,
 				26718FC31DA2903B00420AF0 /* AppDelegate.m in Sources */,
 				26718FC01DA2903B00420AF0 /* main.m in Sources */,
+				26718FFF1DA2922700420AF0 /* GameViewController.m in Sources */,
+				26718FF91DA2920300420AF0 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
