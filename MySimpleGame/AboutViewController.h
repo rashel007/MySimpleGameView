@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutViewController : UIViewController
+@interface AboutViewController : UIViewController<UIWebViewDelegate>{
+    IBOutlet UIWebView *wbPage;
+    IBOutlet UIActivityIndicatorView *indicator;
+}
+
+@property(strong, nonatomic) IBOutlet UIWebView *wbPage;
+@property(strong, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end

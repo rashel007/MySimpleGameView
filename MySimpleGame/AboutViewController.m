@@ -14,9 +14,25 @@
 
 @implementation AboutViewController
 
+@synthesize wbPage, indicator;
+-(void) webViewDidStartLoad:(UIWebView *)webView{
+    [indicator setHidden:NO];
+    [indicator startAnimating];
+}
+-(void) webViewDidFinishLoad:(UIWebView *)webView{
+    [indicator setHidden:YES];
+    [indicator stopAnimating];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSURL *url = [NSURL URLWithString:@"https://github.com/rashel007/MySimpleTapGame.git"];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [wbPage loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
