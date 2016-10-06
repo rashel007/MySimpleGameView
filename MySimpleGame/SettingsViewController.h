@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SettingsViewController : UIViewController
+@interface SettingsViewController : UIViewController{
+    IBOutlet UISlider *slider;
+    IBOutlet UILabel *volume;
+    IBOutlet UISegmentedControl *sound;
+}
+
+@property(nonatomic, strong)IBOutlet UISlider *slider;
+@property(nonatomic, strong)IBOutlet UILabel *volume;
+@property(nonatomic, strong)IBOutlet UISegmentedControl *sound;
 
 @end
